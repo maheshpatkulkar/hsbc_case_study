@@ -596,3 +596,211 @@ Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
 2021-05-01 14:08:23,577 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) uptime 51 minutes | org.apache.activemq.broker.BrokerService | Thread-22
 2021-05-01 14:08:23,577 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-22
 2021-05-01 14:08:23,577 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 13:17:12 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-22
+2021-05-01 14:45:11,508 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 14:45:11 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2021-05-01 14:45:12,601 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2021-05-01 14:45:12,757 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2021-05-01 14:45:12,851 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2021-05-01 14:45:13,007 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-49611-1619860512882-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2021-05-01 14:45:13,085 | INFO  | Listening for connections at: tcp://Mahesh:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 14:45:13,101 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 14:45:13,101 | INFO  | Listening for connections at: amqp://Mahesh:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 14:45:13,101 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 14:45:13,101 | INFO  | Listening for connections at: stomp://Mahesh:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 14:45:13,116 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 14:45:13,116 | INFO  | Listening for connections at: mqtt://Mahesh:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 14:45:13,116 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 14:45:13,132 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 14:45:13,226 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 14:45:13,366 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@3212a8d7{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2021-05-01 14:45:13,445 | INFO  | Listening for connections at ws://Mahesh:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2021-05-01 14:45:13,445 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 14:45:13,445 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-49611-1619860512882-0:1) started | org.apache.activemq.broker.BrokerService | main
+2021-05-01 14:45:13,445 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2021-05-01 14:45:14,455 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 14:45:14,455 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 16:46:37,968 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp295180183-35
+2021-05-01 17:41:14,417 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | Session-HouseKeeper-3670f00-1
+2021-05-01 18:26:58,575 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-49611-1619860512882-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,591 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,591 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,591 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,591 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,591 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,606 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,606 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,606 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,606 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,747 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-49611-1619860512882-0:1) uptime 3 hours 41 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,747 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-49611-1619860512882-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 18:26:58,747 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 14:45:11 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2021-05-01 18:27:02,849 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 18:27:02 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2021-05-01 18:27:03,978 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2021-05-01 18:27:04,150 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2021-05-01 18:27:04,244 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2021-05-01 18:27:04,384 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-51619-1619873824259-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2021-05-01 18:27:04,494 | INFO  | Listening for connections at: tcp://Mahesh:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 18:27:04,494 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 18:27:04,494 | INFO  | Listening for connections at: amqp://Mahesh:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 18:27:04,494 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 18:27:04,509 | INFO  | Listening for connections at: stomp://Mahesh:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 18:27:04,509 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 18:27:04,509 | INFO  | Listening for connections at: mqtt://Mahesh:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 18:27:04,509 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 18:27:04,525 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 18:27:04,603 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 18:27:04,728 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@5d5f10b2{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2021-05-01 18:27:04,791 | INFO  | Listening for connections at ws://Mahesh:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2021-05-01 18:27:04,806 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 18:27:04,806 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-51619-1619873824259-0:1) started | org.apache.activemq.broker.BrokerService | main
+2021-05-01 18:27:04,806 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2021-05-01 18:27:05,798 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 18:27:05,798 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 18:40:23,375 | WARN  | /admin/createDestination.action | org.eclipse.jetty.server.HttpChannel | qtp396918327-41
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 12 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 14 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 49 more
+2021-05-01 19:38:28,453 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-51619-1619873824259-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,472 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,474 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,475 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,476 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,483 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,489 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,490 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,490 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,491 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,687 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-51619-1619873824259-0:1) uptime 1 hour 11 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,688 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-51619-1619873824259-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 19:38:28,690 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 18:27:02 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2021-05-01 19:39:09,390 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 19:39:09 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2021-05-01 19:39:10,473 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2021-05-01 19:39:10,718 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2021-05-01 19:39:10,812 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2021-05-01 19:39:10,951 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-52364-1619878150826-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2021-05-01 19:39:11,066 | INFO  | Listening for connections at: tcp://Mahesh:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 19:39:11,069 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 19:39:11,074 | INFO  | Listening for connections at: amqp://Mahesh:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 19:39:11,077 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 19:39:11,082 | INFO  | Listening for connections at: stomp://Mahesh:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 19:39:11,086 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 19:39:11,092 | INFO  | Listening for connections at: mqtt://Mahesh:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 19:39:11,094 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 19:39:11,101 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 19:39:11,180 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 19:39:11,330 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@7642df8f{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2021-05-01 19:39:11,401 | INFO  | Listening for connections at ws://Mahesh:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2021-05-01 19:39:11,404 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 19:39:11,406 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-52364-1619878150826-0:1) started | org.apache.activemq.broker.BrokerService | main
+2021-05-01 19:39:11,409 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2021-05-01 19:39:12,404 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 19:39:12,406 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 19:39:18,301 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-52364-1619878150826-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-26
+2021-05-01 19:39:18,303 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-26
+2021-05-01 19:39:18,305 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-26
+2021-05-01 19:39:18,307 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-26
+2021-05-01 19:39:18,308 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-26
+2021-05-01 19:39:18,316 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-26
+2021-05-01 19:39:18,321 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-26
+2021-05-01 19:39:18,326 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-26
+2021-05-01 19:39:18,327 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-26
+2021-05-01 19:39:18,329 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-26
+2021-05-01 19:39:19,441 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-52364-1619878150826-0:1) uptime 8.988 seconds | org.apache.activemq.broker.BrokerService | Thread-26
+2021-05-01 19:39:19,443 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-52364-1619878150826-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-26
+2021-05-01 19:39:19,444 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 19:39:09 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-26
+2021-05-01 22:55:43,448 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 22:55:43 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2021-05-01 22:55:44,543 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2021-05-01 22:55:44,781 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2021-05-01 22:55:44,904 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2021-05-01 22:55:45,043 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-53511-1619889944917-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2021-05-01 22:55:45,166 | INFO  | Listening for connections at: tcp://Mahesh:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 22:55:45,168 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 22:55:45,175 | INFO  | Listening for connections at: amqp://Mahesh:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 22:55:45,178 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 22:55:45,186 | INFO  | Listening for connections at: stomp://Mahesh:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 22:55:45,188 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 22:55:45,193 | INFO  | Listening for connections at: mqtt://Mahesh:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 22:55:45,195 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 22:55:45,203 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 22:55:45,296 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 22:55:45,454 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@7642df8f{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2021-05-01 22:55:45,539 | INFO  | Listening for connections at ws://Mahesh:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2021-05-01 22:55:45,541 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 22:55:45,544 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-53511-1619889944917-0:1) started | org.apache.activemq.broker.BrokerService | main
+2021-05-01 22:55:45,547 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2021-05-01 22:55:46,613 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 22:55:46,614 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 23:10:02,685 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-53511-1619889944917-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,690 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,692 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,693 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,695 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,723 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,745 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,746 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,747 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,758 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,915 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-53511-1619889944917-0:1) uptime 14 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,917 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-53511-1619889944917-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-01 23:10:02,918 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 22:55:43 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
