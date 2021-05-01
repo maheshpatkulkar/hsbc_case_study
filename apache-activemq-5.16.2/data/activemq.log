@@ -96,3 +96,503 @@
 2021-05-01 10:05:01,415 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-59731-1619843376488-0:1) uptime 5 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
 2021-05-01 10:05:01,416 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-59731-1619843376488-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
 2021-05-01 10:05:01,417 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 09:59:35 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2021-05-01 12:55:47,528 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 12:55:47 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2021-05-01 12:55:48,666 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2021-05-01 12:55:48,864 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2021-05-01 12:55:48,954 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2021-05-01 12:55:49,090 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64608-1619853948966-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2021-05-01 12:55:49,172 | INFO  | Listening for connections at: tcp://Mahesh:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 12:55:49,174 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 12:55:49,182 | INFO  | Listening for connections at: amqp://Mahesh:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 12:55:49,185 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 12:55:49,192 | INFO  | Listening for connections at: stomp://Mahesh:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 12:55:49,195 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 12:55:49,202 | INFO  | Listening for connections at: mqtt://Mahesh:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 12:55:49,204 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 12:55:49,213 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 12:55:49,297 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 12:55:49,426 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@4d9ac0b4{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2021-05-01 12:55:49,504 | INFO  | Listening for connections at ws://Mahesh:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2021-05-01 12:55:49,506 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 12:55:49,508 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64608-1619853948966-0:1) started | org.apache.activemq.broker.BrokerService | main
+2021-05-01 12:55:49,510 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2021-05-01 12:55:50,599 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 12:55:50,600 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 13:11:45,191 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1178290888-39
+2021-05-01 13:12:08,603 | WARN  | /admin/purgeDestination.action | org.eclipse.jetty.server.HttpChannel | qtp1178290888-39
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 17 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 19 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 54 more
+2021-05-01 13:13:20,085 | WARN  | /admin/deleteMessage.action | org.eclipse.jetty.server.HttpChannel | qtp1178290888-37
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 17 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 19 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 54 more
+2021-05-01 13:17:05,821 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64608-1619853948966-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-22
+2021-05-01 13:17:05,823 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 13:17:05,825 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 13:17:05,826 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 13:17:05,828 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 13:17:05,857 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 13:17:05,860 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 13:17:05,877 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-22
+2021-05-01 13:17:05,879 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-22
+2021-05-01 13:17:05,880 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-22
+2021-05-01 13:17:05,881 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-22
+2021-05-01 13:17:06,137 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64608-1619853948966-0:1) uptime 21 minutes | org.apache.activemq.broker.BrokerService | Thread-22
+2021-05-01 13:17:06,138 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64608-1619853948966-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-22
+2021-05-01 13:17:06,139 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 12:55:47 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-22
+2021-05-01 13:17:12,123 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 13:17:12 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2021-05-01 13:17:13,189 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2021-05-01 13:17:13,423 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2021-05-01 13:17:13,510 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2021-05-01 13:17:13,647 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2021-05-01 13:17:13,724 | INFO  | Listening for connections at: tcp://Mahesh:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 13:17:13,726 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 13:17:13,731 | INFO  | Listening for connections at: amqp://Mahesh:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 13:17:13,733 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 13:17:13,738 | INFO  | Listening for connections at: stomp://Mahesh:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 13:17:13,741 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 13:17:13,748 | INFO  | Listening for connections at: mqtt://Mahesh:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2021-05-01 13:17:13,749 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 13:17:13,756 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 13:17:13,835 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2021-05-01 13:17:13,982 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@495fac5f{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2021-05-01 13:17:14,065 | INFO  | Listening for connections at ws://Mahesh:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2021-05-01 13:17:14,068 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2021-05-01 13:17:14,069 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) started | org.apache.activemq.broker.BrokerService | main
+2021-05-01 13:17:14,071 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2021-05-01 13:17:15,073 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 13:17:15,079 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2021-05-01 13:27:58,866 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp611289995-51
+2021-05-01 13:47:05,742 | WARN  | /admin/deleteDestination.action | org.eclipse.jetty.server.HttpChannel | qtp611289995-40
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 17 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 19 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 54 more
+2021-05-01 13:47:10,301 | WARN  | /admin/deleteDestination.action | org.eclipse.jetty.server.HttpChannel | qtp611289995-49
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 17 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 19 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 54 more
+2021-05-01 13:47:16,428 | WARN  | /admin/deleteDestination.action | org.eclipse.jetty.server.HttpChannel | qtp611289995-35
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 17 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 19 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 54 more
+2021-05-01 13:47:22,493 | WARN  | /admin/deleteDestination.action | org.eclipse.jetty.server.HttpChannel | qtp611289995-51
+javax.servlet.ServletException: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.servlet.ServletException: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:162)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 17 more
+Caused by: org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1452)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:567)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	... 19 more
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:353)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1160)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:940)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 54 more
+2021-05-01 14:08:23,405 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-22
+2021-05-01 14:08:23,405 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 14:08:23,405 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 14:08:23,405 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 14:08:23,420 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 14:08:23,420 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 14:08:23,420 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | Thread-22
+2021-05-01 14:08:23,420 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-22
+2021-05-01 14:08:23,420 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-22
+2021-05-01 14:08:23,420 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-22
+2021-05-01 14:08:23,436 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-22
+2021-05-01 14:08:23,577 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) uptime 51 minutes | org.apache.activemq.broker.BrokerService | Thread-22
+2021-05-01 14:08:23,577 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-64979-1619855233522-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-22
+2021-05-01 14:08:23,577 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Sat May 01 13:17:12 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-22
