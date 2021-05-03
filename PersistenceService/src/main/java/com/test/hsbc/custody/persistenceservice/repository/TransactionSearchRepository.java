@@ -8,5 +8,6 @@ public interface TransactionSearchRepository {
 
 	public TransactionEntity getTransactionEntity(String fileId,String tradeid);
 	public Stream<TransactionEntity> getTransactionEntitys(String fileId);
-	
+	public Stream<TransactionEntity>  getStatusCountForFileName(String fileName);
+
 }

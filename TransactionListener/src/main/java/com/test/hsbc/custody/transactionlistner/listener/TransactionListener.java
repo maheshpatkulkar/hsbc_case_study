@@ -40,6 +40,7 @@ public class TransactionListener {
 
 
 		String fileId = (String) messageHeaders.get("fileId");
+		String fileName = (String) messageHeaders.get("CamelFileNameConsumed");
 		transaction.setFileId(fileId);
 
 		logger.info("Message Receieved");
@@ -54,7 +55,7 @@ public class TransactionListener {
 
 		try {
 
-			HttpEntity<String> request = getHttpEntity(fileId,"RECEIVED",jsonTransactionString);
+			HttpEntity<String> request = getPostHttpEntity(fileId,"RECEIVED",fileName,jsonTransactionString);
 			ResponseEntity<String> response =
 					restTemplate.postForEntity("http://persistenceservice/app/transaction/", request, String.class);
 			logger.info("Message persisted");
@@ -66,7 +67,7 @@ public class TransactionListener {
 
 			sendMessage(VALIDATION_QUEUE,transaction,messageHeaders);
 		} catch (Exception ex) {
-			HttpEntity<String> request = getHttpEntity(fileId,"FAILED",jsonTransactionString);
+			HttpEntity<String> request = getPutHttpEntity(fileId,"FAILED",jsonTransactionString);
 			restTemplate.put("http://persistenceservice/app/transaction/", request);
 			logger.error("Message failed",ex);
 
@@ -90,7 +91,19 @@ public class TransactionListener {
 		});
 	}
 
-	private HttpEntity<String> getHttpEntity (String fileId, String status,String jsonString) {
+	private HttpEntity<String> getPostHttpEntity (String fileId, String status,String fileName,String jsonString) {
+
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);	
+		headers.add("fileId", fileId);
+		headers.add("status", status);
+		headers.add("fileName", fileName);
+		
+
+		return new HttpEntity<String>(jsonString, headers);
+	}
+
+	private HttpEntity<String> getPutHttpEntity (String fileId, String status,String jsonString) {
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);	
@@ -98,8 +111,8 @@ public class TransactionListener {
 		headers.add("status", status);
 
 		return new HttpEntity<String>(jsonString, headers);
-	}
-
+	}	
+	
 	private String getJsonString(Transaction transaction) throws JsonProcessingException {
 		return objectMapper.writeValueAsString(transaction);
 	}

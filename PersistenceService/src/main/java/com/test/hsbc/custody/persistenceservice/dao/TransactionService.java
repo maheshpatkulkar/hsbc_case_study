@@ -1,5 +1,9 @@
 package com.test.hsbc.custody.persistenceservice.dao;
 
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +44,16 @@ public class TransactionService {
 	public TransactionEntity getTransactionNativeQuery(String fileId,String tradeId) {
 		 return  searchRepository.getTransactionEntity(fileId, tradeId);
 	}	
+	
+	public Map<String,Long> getFileStatistics(String fileName) {
+		  Stream<TransactionEntity> stream = searchRepository.getStatusCountForFileName(fileName);
+		  
+		  return stream.map(TransactionEntity::getStatus)
+				  .peek(s-> System.out.println(s))
+		  .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		  
+		  
+	}		
 
 	
 }

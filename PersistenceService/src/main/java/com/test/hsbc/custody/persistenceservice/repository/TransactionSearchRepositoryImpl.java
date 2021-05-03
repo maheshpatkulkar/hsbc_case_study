@@ -33,4 +33,13 @@ public class TransactionSearchRepositoryImpl implements TransactionSearchReposit
 	    return  (TransactionEntity) namedQuery.getSingleResult();		
 	}
 
+	@Override
+	public Stream<TransactionEntity> getStatusCountForFileName(String fileName) {
+		Query namedQuery = entityManager.createNamedQuery("TransactionEntity.findByfileName");
+	    namedQuery.setParameter("fileName", fileName);
+		
+	    return namedQuery.getResultStream();		
+		
+	}
+
 }

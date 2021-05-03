@@ -12,6 +12,7 @@ import javax.persistence.Table;
 @Table(name = "TRANSACTION_TABLE" )
 @NamedQuery(name = "TransactionEntity.findByFileId", query = "SELECT t FROM TransactionEntity t WHERE t.fileId=:fileid")
 @NamedQuery(name = "TransactionEntity.findByFileIdTradeId", query = "SELECT t FROM TransactionEntity t WHERE t.fileId=:fileid and t.tradeId=:tradeid")
+@NamedQuery(name = "TransactionEntity.findByfileName", query = "SELECT t FROM TransactionEntity t WHERE t.fileName=:fileName")
 
 public class TransactionEntity {
 
@@ -54,6 +55,18 @@ public class TransactionEntity {
 
  	@Column (name = "exec_price") 	
  	private String execPrice;
+
+ 	@Column (name = "file_name") 	
+ 	private String fileName;
+ 	
+ 	
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 
 	public Long getId() {
 		return id;

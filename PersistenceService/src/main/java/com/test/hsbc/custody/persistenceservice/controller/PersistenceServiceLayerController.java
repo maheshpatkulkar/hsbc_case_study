@@ -1,16 +1,20 @@
 package com.test.hsbc.custody.persistenceservice.controller;
 
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.test.hsbc.custody.common.entities.Transaction;
@@ -19,13 +23,14 @@ import com.test.hsbc.custody.persistenceservice.entity.TransactionEntity;
 
 @RestController
 @RequestMapping("/app")
+@ResponseStatus(HttpStatus.NO_CONTENT)
 public class PersistenceServiceLayerController {
 	
 	@Autowired private TransactionService service;
 	
 	@PostMapping(value="/transaction/", produces = {MediaType.APPLICATION_JSON_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<String> insert (@RequestBody Transaction trasTransaction,
-			@RequestHeader(value="fileId") String fileId,@RequestHeader(value="status") String status) {
+			@RequestHeader(value="fileId") String fileId,@RequestHeader(value="status") String status,@RequestHeader(value="fileName") String fileName) {
 		
 		TransactionEntity trasnEntity = new TransactionEntity();
 		trasnEntity.setBook(trasTransaction.getBook());
@@ -40,6 +45,7 @@ public class PersistenceServiceLayerController {
 		trasnEntity.setStatus(status);
 		trasnEntity.setTradeDate(trasTransaction.getTradeDate());
 		trasnEntity.setTradeId(trasTransaction.getTradeId());
+		trasnEntity.setFileName(fileName);
 		
 		service.saveOrUpdate(trasnEntity);
 		
@@ -68,11 +74,12 @@ public class PersistenceServiceLayerController {
 		return new ResponseEntity<>("Success",HttpStatus.OK);
 	}
 
-	@GetMapping(value="transaction/{fileid}", produces = {MediaType.APPLICATION_JSON_VALUE})
-	public ResponseEntity<String> transactionCount (@RequestBody Transaction trasTransaction) {
+	@GetMapping(value="transaction/{fileName}/", produces = {MediaType.APPLICATION_JSON_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE})
+	public ResponseEntity<Map<String,Long>> transactionCount (@PathVariable String fileName) {
 		
+		Map<String,Long> fileStatusWiseCount = service.getFileStatistics(fileName);
 		
-		return new ResponseEntity<>("Success",HttpStatus.OK);
+		return new ResponseEntity<>(fileStatusWiseCount,HttpStatus.OK);
 	}
 	
 	  @GetMapping("/hello/")
