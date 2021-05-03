@@ -102,7 +102,7 @@ public class EndToEndTestApplication {
 			System.out.println("Test case failed");
 			throw new Exception();
 		}  else {
-			System.out.println("testAllSuccessScenario");
+			System.out.println("Successfull execution testAllSuccessScenario");
 		}
 		
 	}
@@ -127,7 +127,7 @@ public class EndToEndTestApplication {
 			System.out.println("Test case failed");
 			throw new Exception();
 		}  else {
-			System.out.println("testAllOneFailedScenario");
+			System.out.println("Successfull execution testAllOneFailedScenario");
 		}
   
 		

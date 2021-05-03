@@ -45,7 +45,18 @@ public class DownStreamRoutingListner {
 		} catch (Exception ex) {
 			sendMessage(ERROR_QUEUE,transaction,messageHeaders);
 			return ;
-		}		  
+		}
+		
+		if ( messageHeaders.get("jms_redelivered") != null ) {
+			boolean reDeliverrd = Boolean.parseBoolean(messageHeaders.get("jms_redelivered").toString());
+			if (reDeliverrd && messageHeaders.get("JMSXDeliveryCount")  != null ) {
+				int redeliveryCount = Integer.parseInt(messageHeaders.get("JMSXDeliveryCount").toString());
+				if (redeliveryCount > 3) {
+					sendMessage(ERROR_QUEUE,transaction,messageHeaders);
+					return ;
+				}
+			}
+		}				
 		
 		String downStreamQueue = getDownStreamQueue(transaction);
 		try {

@@ -37,8 +37,7 @@ public class TransactionListener {
 
 	@JmsListener(destination = "inbound.queue", containerFactory = "myFactory")
 	public void receiveMessage(Transaction transaction, MessageHeaders messageHeaders,JmsMessageHeaderAccessor jmsMessageHeaderAccessor) {
-
-
+		
 		String fileId = (String) messageHeaders.get("fileId");
 		String fileName = (String) messageHeaders.get("CamelFileNameConsumed");
 		transaction.setFileId(fileId);
@@ -52,7 +51,19 @@ public class TransactionListener {
 			sendMessage(ERROR_QUEUE,transaction,messageHeaders);
 			return ;
 		}
-
+		
+		if ( messageHeaders.get("jms_redelivered") != null ) {
+			boolean reDeliverrd = Boolean.parseBoolean(messageHeaders.get("jms_redelivered").toString());
+			if (reDeliverrd && messageHeaders.get("JMSXDeliveryCount")  != null ) {
+				int redeliveryCount = Integer.parseInt(messageHeaders.get("JMSXDeliveryCount").toString());
+				if (redeliveryCount > 3) {
+					sendMessage(ERROR_QUEUE,transaction,messageHeaders);
+					return ;
+				}
+			}
+		}		
+		
+		
 		try {
 
 			HttpEntity<String> request = getPostHttpEntity(fileId,"RECEIVED",fileName,jsonTransactionString);
