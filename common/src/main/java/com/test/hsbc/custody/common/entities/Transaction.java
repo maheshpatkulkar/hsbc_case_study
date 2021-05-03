@@ -14,9 +14,17 @@ public class Transaction {
 	private String orderPrice;
 	private String tradeDate;
 	private String execPrice;
+	private String fileId;
+	
 	
 	public String getTradeId() {
 		return tradeId;
+	}
+	public String getFileId() {
+		return fileId;
+	}
+	public void setFileId(String fileId) {
+		this.fileId = fileId;
 	}
 	public void setTradeId(String tradeId) {
 		this.tradeId = tradeId;
@@ -81,7 +89,7 @@ public class Transaction {
 		
 		StringJoiner sj = new StringJoiner(",");
 		sj.add(tradeId).add(instrumentId).add(book).add(counterParty).add(orderQuantity).add(side)
-		.add(executionQuantity).add(orderPrice).add(tradeDate).add(execPrice);
+		.add(executionQuantity).add(orderPrice).add(tradeDate).add(execPrice).add(fileId);
 
 		return sj.toString();
 
@@ -99,6 +107,13 @@ public class Transaction {
 		private String orderPrice;
 		private String tradeDate;
 		private String execPrice;
+		private String fileId;
+		
+		public TransactionBuilder setFileId(String fileId) {
+			this.fileId = fileId;
+			return this;
+		}
+
 		
 		public TransactionBuilder setTradeId(String tradeId) {
 			this.tradeId = tradeId;
@@ -153,6 +168,7 @@ public class Transaction {
         	transaction.setSide(side);
         	transaction.setTradeDate(tradeDate);
         	transaction.setTradeId(tradeId);
+        	transaction.setFileId(fileId);
         	return transaction;
         }
 
@@ -164,8 +180,9 @@ public class Transaction {
 		return "Transaction [tradeId=" + tradeId + ", instrumentId=" + instrumentId + ", book=" + book
 				+ ", counterParty=" + counterParty + ", orderQuantity=" + orderQuantity + ", side=" + side
 				+ ", executionQuantity=" + executionQuantity + ", orderPrice=" + orderPrice + ", tradeDate=" + tradeDate
-				+ ", execPrice=" + execPrice + "]";
+				+ ", execPrice=" + execPrice + ", fileId=" + fileId + "]";
 	}
+
 	
 	
 	
