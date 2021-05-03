@@ -1718,3 +1718,26 @@ Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
 	... 49 more
+2021-05-03 17:14:00,755 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1585571244-48
+2021-05-03 17:45:44,665 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | Session-HouseKeeper-76318a7d-1
+2021-05-03 20:14:43,852 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1585571244-48
+2021-05-03 20:45:09,324 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-60620-1620020212747-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-03 20:45:09,559 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-03 20:45:09,605 | INFO  | socketQueue interrupted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2021-05-03 20:45:09,762 | INFO  | socketQueue interrupted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2021-05-03 20:45:09,684 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-03 20:45:09,955 | INFO  | Could not accept connection during shutdown  : null (null) | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: amqp://0.0.0.0:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2021-05-03 20:45:09,888 | INFO  | Could not accept connection during shutdown  : null (null) | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: tcp://0.0.0.0:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2021-05-03 20:45:10,016 | INFO  | socketQueue interrupted - stopping | org.apache.activemq.transport.tcp.TcpTransportServer | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2021-05-03 20:45:10,000 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-03 20:45:10,187 | INFO  | Could not accept connection during shutdown  : null (null) | org.apache.activemq.broker.TransportConnector | ActiveMQ Transport Server Thread Handler: stomp://0.0.0.0:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+2021-05-03 20:45:10,234 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-03 20:45:12,297 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-03 20:45:12,609 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2021-05-03 20:45:12,937 | INFO  | PListStore:[C:\Mahesh\code\hsbc_case_study\hsbc_case_study\apache-activemq-5.16.2\bin\..\data\localhost\tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2021-05-03 20:45:13,018 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-03 20:45:13,051 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-03 20:45:13,066 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2021-05-03 20:45:13,894 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-60620-1620020212747-0:1) uptime 9 hours 38 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-03 20:45:13,926 | INFO  | Apache ActiveMQ 5.16.2 (localhost, ID:Mahesh-60620-1620020212747-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2021-05-03 20:45:13,957 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@71423665: startup date [Mon May 03 11:06:50 IST 2021]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
